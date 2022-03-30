@@ -58,7 +58,6 @@ job = "Teacher";
 lastName = "Gopi";
 console.log(lastName);
 
-*/
 
 const now = 2030;
 const ageKavya = now - 2002;
@@ -72,7 +71,7 @@ const firstName = "Kavya";
 const lastName = "Gopi";
 console.log(firstName + " " + lastName);
 
-// Assignment Operator
+// Assignment Operator 
 let x = 10 + 5; // 15
 x += 10; // x = x + 10
 x *= 4; // x = x * 4 = 100
@@ -87,3 +86,20 @@ console.log(ageMadhu >= 18);
 const isFullAge = ageMadhu >= 18;
 
 console.log(now - 2002 > now - 2007);
+
+*/
+
+const now = 2030;
+const ageKavya = now - 2002;
+const ageMadhu = now - 2007;
+
+console.log(now - 2002 > now - 2007);
+
+console.log(25 - 10 - 5);
+
+let x, y;
+x, y = y = 25 = 10 = 5 ; // x = y = 10, x =
+console.log(x,y);
+
+const averageAge = ageKavya + ageMadhu / 2
+console.log(ageKavya, ageMadhu, averageAge)
