@@ -71,7 +71,10 @@ const firstName = "Kavya";
 const lastName = "Gopi";
 console.log(firstName + " " + lastName);
 
-// Assignment Operator 
+-----------------------
+Assignment Operator 
+------------------------
+
 let x = 10 + 5; // 15
 x += 10; // x = x + 10
 x *= 4; // x = x * 4 = 100
@@ -79,7 +82,10 @@ x++; // x = x + 1
 x--; // x = x - 1
 console.log(x);
 
-// Comparison Operator
+-----------------------
+Comparison Operator
+-----------------------
+
 console.log(ageKavya < ageMadhu); // >, <, >=. <=
 console.log(ageMadhu >= 18);
 
@@ -122,9 +128,9 @@ Test Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1
 Test Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 
 GOOD LUCK 😀
-*/
 
-/*
+----------------------------
+
 const massMark = 78;
 const heightMArk = 1.69;
 const massJohn = 92;
@@ -164,9 +170,9 @@ console.log(`string
 multiple
 lines`);
 
-*/
-
-// if else statements
+-------------------
+if else statements
+-------------------
 
 const age = 15;
 
@@ -186,3 +192,41 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+
+---------------------
+Coding Challenge #2
+---------------------
+
+Use the BMI example from Challenge #1, and the code you already wrote, and
+improve it.
+
+Your tasks:
+-----------
+1. Print a nice output to the console, saying who has the higher BMI. The message
+is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+BMI (28.3) is higher than John's (23.9)!"
+
+Hint: Use an if/else statement 😉
+GOOD LUCK 😀
+*/
+const massMark = 78;
+const heightMArk = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+// const massMark = 95;
+// const heightMArk = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMArk ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn}) !`);
+} else {
+  console.log(`john's BMI (${BMIMark}) is higher than Mark's (${BMIJohn}) !`);
+}
