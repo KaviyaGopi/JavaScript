@@ -234,7 +234,6 @@ if (BMIMark > BMIJohn) {
 --------------------
 Type Conversion
 --------------------
-*/
 
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
@@ -245,13 +244,18 @@ console.log(typeof NaN);
 
 console.log(String(23), 23);
 
-// Type coerction
+-------------------
+Type coerction
+-------------------
+
 console.log("I am " + 23 + " year old");
 console.log("23" - "10" - 3);
 console.log("23" * "2");
 console.log("23" / "2");
 console.log("23" > "18");
 
-let n = "1" + 1;
+let n = "2" + 5;
 n = n - 1;
 console.log(n);
+
+*/
