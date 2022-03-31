@@ -141,7 +141,6 @@ const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
 
-*/
 
 const firstNAme = "Kavya";
 const job = "Programmer";
@@ -149,7 +148,7 @@ const birthYear = 2002;
 const year = 2022;
 
 const Kavya =
-  "I'm " + firstNAme + ", a " + (year - birthYear) + " years old " + job + "!";
+"I'm " + firstNAme + ", a " + (year - birthYear) + " years old " + job + "!";
 console.log(Kavya);
 
 const kavyaNew = `I'm ${firstNAme}, a ${year - birthYear} year old ${job}!`;
@@ -164,3 +163,26 @@ lines`);
 console.log(`string
 multiple
 lines`);
+
+*/
+
+// if else statements
+
+const age = 15;
+
+if (age >= 18) {
+  console.log(`Kaviya can start driving license`);
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Kavya is too young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 2002;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
