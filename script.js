@@ -129,7 +129,6 @@ const massMark = 78;
 const heightMArk = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
-*/
 
 const massMark = 95;
 const heightMArk = 1.88;
@@ -141,3 +140,27 @@ const BMIJohn = (massJohn / heightJohn) * heightJohn;
 const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
+
+*/
+
+const firstNAme = "Kavya";
+const job = "Programmer";
+const birthYear = 2002;
+const year = 2022;
+
+const Kavya =
+  "I'm " + firstNAme + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(Kavya);
+
+const kavyaNew = `I'm ${firstNAme}, a ${year - birthYear} year old ${job}!`;
+console.log(kavyaNew);
+
+console.log(`Just a regular string. . . `);
+
+console.log(`string with \n\
+multiple \n\
+lines`);
+
+console.log(`string
+multiple
+lines`);
