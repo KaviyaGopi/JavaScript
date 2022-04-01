@@ -258,4 +258,31 @@ let n = "2" + 5;
 n = n - 1;
 console.log(n);
 
+-------------------------
+Truthyl and Falsy Values 
+-------------------------
+
+- 5 falsy values: 0, '' , undefinrd, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(Kavya));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 0;
+if (money) {
+  console.log("Don't spend it all ;) ");
+} else {
+  console.log("you should get a job !");
+}
+
+---------------------------------------------------------------------
+
+let height = 123;
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
+
 */
