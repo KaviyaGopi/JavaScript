@@ -396,7 +396,6 @@ if (scoreDolphins > scoreKoales && scoreDolphins >= 100) {
 }
 
 ------------------------------------------------------------------------------------------
-*/
 
 const day = "Monday";
 
@@ -405,35 +404,62 @@ switch (day) {
     console.log("Plan course structure");
     console.log("Go to coding meetup");
     break;
-  case "Tuesday":
-    console.log("Prepare theory videos");
-    break;
-  case "Wednesday":
-  case "Thursaday":
-    console.log("weite code example");
-    break;
-  case "Friday":
-    console.log("Record Videos");
-    break;
-  case "Saturday":
-  case "Sunday":
+    case "Tuesday":
+      console.log("Prepare theory videos");
+      break;
+      case "Wednesday":
+        case "Thursaday":
+          console.log("weite code example");
+          break;
+          case "Friday":
+            console.log("Record Videos");
+            break;
+            case "Saturday":
+              case "Sunday":
     console.log("Enjoy the weekend :D");
     break;
   default:
     console.log("Not a valid day!");
+  }
+  
+  -----------------------------------------------------------------------------------------
+
+  if (day === "Monday") {
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+  } else if (day === "Tuesday") {
+    console.log("Prepare theory videos");
+  } else if (day === "Wednesday" || "Thursday") {
+    console.log("weite code example");
+  } else if (day === "Friday") {
+    console.log("Record Videos");
+  } else if (day === "Saturday" || "Sunday") {
+    console.log("Enjoy the weekend :D");
+  } else {
+    console.log("Not a valid day!");
+  }
+  
+  -----------------------------------------------------------------------------------------
+  The Conditional (Ternary) Operator
+  -----------------------------------
+  */
+
+const age = 23;
+if (age >= 18) {
+  console.log("I like to drink wine");
+} else {
+  console.log("I like to drink water");
 }
 
-if (day === "Monday") {
-  console.log("Plan course structure");
-  console.log("Go to coding meetup");
-} else if (day === "Tuesday") {
-  console.log("Prepare theory videos");
-} else if (day === "Wednesday" || "Thursday") {
-  console.log("weite code example");
-} else if (day === "Friday") {
-  console.log("Record Videos");
-} else if (day === "Saturday" || "Sunday") {
-  console.log("Enjoy the weekend :D");
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine";
 } else {
-  console.log("Not a valid day!");
+  drink2 = "water";
 }
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
