@@ -286,3 +286,24 @@ if (height) {
 }
 
 */
+
+const age = "18";
+if (age === 18) console.log("you became an adult :D (strict)");
+
+if (age == 18) console.log("you Just became an adult :D(loose)");
+
+const favorite = Number(prompt("what's your favourite number ?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+  console.log("cool! 23 is an amazing number!");
+} else if (favorite === 7) {
+  console.log("7 is also a cool number ");
+} else if (favorite === 9) {
+  console.log("9 is also a cool number ");
+} else {
+  console.log("number is not 23 or 7 0r 9");
+}
+
+if (favorite !== 23) console.log("why not 23?");
