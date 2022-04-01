@@ -285,8 +285,6 @@ if (height) {
   console.log("Height is UNDEFINED");
 }
 
-*/
-
 const age = "18";
 if (age === 18) console.log("you became an adult :D (strict)");
 
@@ -307,3 +305,45 @@ if (favorite === 23) {
 }
 
 if (favorite !== 23) console.log("why not 23?");
+
+------------------------------------------------
+BASIC BOOLEANLOGIC: THE AND, OR & NOT OPERATORS
+------------------------------------------------
+
+A: Sarah has a driver's license
+B: Sarah has good vision
+
+Boolean variables that can be either TRUE or FALSE 
+
+AND : A & B = " Sarah has a driver's license AND Sarah has good vision "
+(TRUE when all are true . FALSE when even one is False)
+
+OR : A OR B = " Sarah has a driver's license OR Sarah has good vision "
+(TRUE when ONE is true . FALSE when all are False)
+
+NOT : Inverts TRUE / FALSE value 
+-------------------------------------------------------------------------
+
+const hasDriverLicense = true; // A
+const hasGoodVision = false; // B
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+if (hasDriverLicense && hasGoodVision) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("someone else should drive...");
+}
+
+const isTired = true; // C
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+if (hasDriverLicense && hasGoodVision && isTired) {
+  console.log("sarah is able to drive !");
+} else {
+  console.log("someone else should drive...");
+}
+
+*/
