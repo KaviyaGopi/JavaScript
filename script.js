@@ -376,7 +376,6 @@ Test Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 GOOD LUCK 😀
 --------------------------------------------------------------------------------------
-*/
 
 const scoreDolphins = (96 + 108 + 89) / 3;
 const scoreKoales = (88 + 91 + 110) / 3;
@@ -394,4 +393,47 @@ if (scoreDolphins > scoreKoales && scoreDolphins >= 100) {
   console.log("Both wins the trophy");
 } else {
   console.log("No one wins the trophy");
+}
+
+------------------------------------------------------------------------------------------
+*/
+
+const day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "Tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "Wednesday":
+  case "Thursaday":
+    console.log("weite code example");
+    break;
+  case "Friday":
+    console.log("Record Videos");
+    break;
+  case "Saturday":
+  case "Sunday":
+    console.log("Enjoy the weekend :D");
+    break;
+  default:
+    console.log("Not a valid day!");
+}
+
+if (day === "Monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "Tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "Wednesday" || "Thursday") {
+  console.log("weite code example");
+} else if (day === "Friday") {
+  console.log("Record Videos");
+} else if (day === "Saturday" || "Sunday") {
+  console.log("Enjoy the weekend :D");
+} else {
+  console.log("Not a valid day!");
 }
