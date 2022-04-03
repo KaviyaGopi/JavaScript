@@ -183,7 +183,6 @@ checkWinner(scoreDolphins, scoreKoalas);
 Introduction to Arrays
 -----------------------
 
-*/
 const friend1 = "Michael";
 const friend2 = "Steven";
 const friend3 = "Peter";
@@ -226,3 +225,39 @@ const ages = [
   calcAge(years[1], calcAge(years[years.length - 1])),
 ];
 console.log(age);
+
+--------------------------------
+Basic Array Operations (Methods)
+--------------------------------
+
+*/
+const friends = ["Michael", "Steven", "Peter"];
+
+// Add element
+const newlength = friends("Jay");
+console.log(friends);
+console.log(newlength);
+
+frienf.unshift("John");
+console.log(friends);
+
+// Remove element
+friends.pop(); //last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); //first
+console.log(friends);
+
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
+
+friends.push(23);
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+
+if (friends.includes("Steven"));
+{
+  console.log("you have a friend called steven");
+}
