@@ -377,7 +377,6 @@ for (let rep = 1; rep <= 10; rep++) {
 ----------------------------------------
 Looping Arrays, Breaking and Continuing
 ----------------------------------------
-*/
 
 const types = [];
 
@@ -386,7 +385,7 @@ const jonas = ["Jonas", "Schmedtman", "teacher", ["Kavy", "Peter", "Steven"]];
 for (let i = 0; i < jonas.length; i++) {
   // Reading from jonas array
   console.log(jonas[i], typeof jonas[i]);
-
+  
   // filling types array
   // types[i] = typeof jonas[i];
   types.push(typeof jonas[i]);
@@ -407,7 +406,7 @@ console.log(ages);
 console.log("---ONLY STRING---");
 for (let i = 0; i < jonas.length; i++) {
   if (typeof jonas[i] != "string") continue;
-
+  
   console.log(jonas[i], typeof jonas[i]);
 }
 
@@ -416,4 +415,26 @@ for (let i = 0; i < jonas.length; i++) {
   if (typeof jonas[i] != "string");
   break;
   console.log(jonas[i], typeof jonas[i]);
+}
+
+-------------------------------------
+Looping Backwards and Loops in Loops
+-------------------------------------
+*/
+
+const jonas = ["Jonas", "Schmedtman", "teacher", ["Kavy", "Peter", "Steven"]];
+
+// 0, 1, ..., 4
+// 4, 3, ..., 0
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+  console.log(i, jonas[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--------Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise} : lifting weight repetition ${rep}`);
+  }
 }
