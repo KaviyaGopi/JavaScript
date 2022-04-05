@@ -357,7 +357,6 @@ console.log(jonas.calcAge());
 ------------------------
 Iteration. The for loop 
 ------------------------
-*/
 
 // console.log("Lifting weight repetition 1");
 // console.log("Lifting weight repetition 2");
@@ -373,4 +372,48 @@ Iteration. The for loop
 // for loop keeps running while condition is True
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weight repetition ${rep}`);
+}
+
+----------------------------------------
+Looping Arrays, Breaking and Continuing
+----------------------------------------
+*/
+
+const types = [];
+
+const jonas = ["Jonas", "Schmedtman", "teacher", ["Kavy", "Peter", "Steven"]];
+
+for (let i = 0; i < jonas.length; i++) {
+  // Reading from jonas array
+  console.log(jonas[i], typeof jonas[i]);
+
+  // filling types array
+  // types[i] = typeof jonas[i];
+  types.push(typeof jonas[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1959, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// Continue and break
+
+console.log("---ONLY STRING---");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] != "string") continue;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log("---BREAK WITH NUMBERE---");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] != "string");
+  break;
+  console.log(jonas[i], typeof jonas[i]);
 }
