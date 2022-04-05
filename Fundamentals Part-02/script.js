@@ -285,7 +285,6 @@ const jonas = {
 Dot vs. Bracket Notation
 -------------------------
 
-*/
 
 const jonas = {
   firstName: "Jonas",
@@ -305,23 +304,73 @@ console.log(jonas["last" + nameKey]);
 
 const intrestedIn = prompt(
   "What do you want to know about Jonas ? choose between firstName , lastName , age , job and friends"
-);
-
-if (jonas[intrestedIn]) {
-  console.log(jonas[intrestedIn]);
-} else {
-  console.log(
-    'weong request choose between firstName , lastName , age , job and friends" '
   );
+  
+  if (jonas[intrestedIn]) {
+    console.log(jonas[intrestedIn]);
+  } else {
+    console.log(
+      'weong request choose between firstName , lastName , age , job and friends" '
+      );
+    }
+    
+    jonas.location = "Portugal";
+    jonas["twitter"] = "@jonasschmedtman";
+    console.log(jonas);
+    
+    // Challenge
+    // "Jonas has 3 friends , and his bestfriend is called Kavy"
+    
+    console.log(
+      `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+      );
+
+--------------
+Object Method
+--------------
+      
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Kavy", "Peter", "Steven"],
+  hasDriversLicense: true,
+  
+  //   calcAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    //   },
+    // };
+    
+    calcAge: function () {
+      this.console.log(this);
+      return 2037 - this.birthYear;
+    },
+  };
+  
+console.log(jonas.calcAge());
+console.log(jonas.calcAge());
+console.log(jonas.calcAge());
+
+// console.log(jonas["calcAge"[1991]]);
+
+------------------------
+Iteration. The for loop 
+------------------------
+*/
+
+// console.log("Lifting weight repetition 1");
+// console.log("Lifting weight repetition 2");
+// console.log("Lifting weight repetition 3");
+// console.log("Lifting weight repetition 4");
+// console.log("Lifting weight repetition 5");
+// console.log("Lifting weight repetition 6");
+// console.log("Lifting weight repetition 7");
+// console.log("Lifting weight repetition 8");
+// console.log("Lifting weight repetition 9");
+// console.log("Lifting weight repetition 10");
+
+// for loop keeps running while condition is True
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repetition ${rep}`);
 }
-
-jonas.location = "Portugal";
-jonas["twitter"] = "@jonasschmedtman";
-console.log(jonas);
-
-// Challenge
-// "Jonas has 3 friends , and his bestfriend is called Kavy"
-
-console.log(
-  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
-);
