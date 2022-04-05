@@ -420,7 +420,6 @@ for (let i = 0; i < jonas.length; i++) {
 -------------------------------------
 Looping Backwards and Loops in Loops
 -------------------------------------
-*/
 
 const jonas = ["Jonas", "Schmedtman", "teacher", ["Kavy", "Peter", "Steven"]];
 
@@ -433,8 +432,31 @@ for (let i = jonas.length - 1; i >= 0; i--) {
 
 for (let exercise = 1; exercise < 4; exercise++) {
   console.log(`--------Starting exercise ${exercise}`);
-
+  
   for (let rep = 1; rep < 6; rep++) {
     console.log(`Exercise ${exercise} : lifting weight repetition ${rep}`);
   }
+}
+
+---------------
+The while loop 
+---------------
+*/
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weight repetition ${rep}`);
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE : Lifting weight repe tition ${rep}`);
+  rep++;
+}
+
+let dict = MAth.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`you rolled a ${dice}`);
+  dict = MAth.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is  about to end...");
 }
