@@ -117,3 +117,9 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+@media (max-width: 85em) {
+  html {
+    font-size: 60.5%;
+  }
+} ;
